@@ -62,7 +62,7 @@ namespace ELS.Siren
                 {
                     soundId = API.GetSoundId();
                     if (!Audio.HasSoundFinished(soundId)) return;
-                    Function.Call(Hash.PLAY_SOUND_FROM_ENTITY, soundId, (InputArgument)_file, (InputArgument)_entity.Handle, (InputArgument)0, (InputArgument)0, (InputArgument)0);
+                    Function.Call(Hash.PLAY_SOUND_FROM_ENTITY, soundId, (InputArgument)_file, (InputArgument)_entity.Handle, "DLC_WMSIRENS_SOUNDSET", (InputArgument)0, (InputArgument)0);
                     Utils.DebugWriteLine($"Started sound with id of {soundId}");
                 }
             }

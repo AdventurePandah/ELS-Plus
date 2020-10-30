@@ -70,6 +70,7 @@ namespace ELS
                             Tick += Class1_Tick;
                             Function.Call((Hash)3520272001, "car.defaultlight.night.emissive.on", Global.NightLtBrightness);
                             Function.Call((Hash)3520272001, "car.defaultlight.day.emissive.on", Global.DayLtBrightness);
+                            Function.Call(Hash.REQUEST_SCRIPT_AUDIO_BANK, "DLC_WMSIRENS\\SIRENPACK_ONE", false);
                         }
                         catch (Exception e)
                         {
